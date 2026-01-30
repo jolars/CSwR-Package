@@ -9,9 +9,9 @@ A data frame with 147 rows and 5 columns:
 \describe{
 \item{Year}{Year (numeric)}
 \item{Month}{Month (encoded as a factor with levels 1 to 12)}
-\item{Temp_Nuuk}{Montly mean temperature in Nuuk}
+\item{Temp_nuuk}{Montly mean temperature in Nuuk}
 \item{Temp_Qaqortoq}{Montly mean temperature in Qaqortoq}
-\item{Temp_diff}{Temperature difference, \code{Temp_Nuuk - Temp_Qaqortoq}}
+\item{Temp_diff}{Temperature difference, \code{Temp_nuuk - Temp_Qaqortoq}}
 }
 }
 \source{

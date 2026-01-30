@@ -25,9 +25,9 @@
 #' \describe{
 #'   \item{Year}{Year (numeric)}
 #'   \item{Month}{Month (encoded as a factor with levels 1 to 12)}
-#'   \item{Temp_Nuuk}{Montly mean temperature in Nuuk}
+#'   \item{Temp_nuuk}{Montly mean temperature in Nuuk}
 #'   \item{Temp_Qaqortoq}{Montly mean temperature in Qaqortoq}
-#'   \item{Temp_diff}{Temperature difference, `Temp_Nuuk - Temp_Qaqortoq`}
+#'   \item{Temp_diff}{Temperature difference, `Temp_nuuk - Temp_Qaqortoq`}
 #' }
 #'
 #' @source <https://crudata.uea.ac.uk/cru/data/greenland>
