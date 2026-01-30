@@ -1,0 +1,12 @@
+---
+output: github_document
+---
+
+# CSwR
+
+<!-- badges: start -->
+[![R build status](https://github.com/jolars/CSwR-Package/workflows/R-CMD-check/badge.svg)](https://github.com/jolars/CSwR-Package/actions)
+[![Code coverage](https://codecov.io/gh/jolars/CSwR-Package/graph/badge.svg)](https://app.codecov.io/gh/jolars/CSwR-Package)
+<!-- badges: end -->
+
+This is the README file for the R package `CSwR`.

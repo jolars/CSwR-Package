@@ -1,0 +1,36 @@
+Package: CSwR
+Title: Companion package for the book "Computational Statistics with R"
+Version: 0.0.0.9000
+Authors@R:
+    c(
+      person(
+        "Niels Richard",
+        "Hansen",
+        email = "Niels.R.Hansen@math.ku.dk",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-3883-365X")
+      ),
+      person(
+        "Johan",
+        "Larsson",
+        role = "aut",
+        email = "johan@jolars.co",
+        comment = c(ORCID = "0000-0002-4029-5945")
+      )
+    )
+Description: Contains data sets and functions used in the book
+    "Computational Statistics with R".
+Depends:
+    R (>= 4.0.0)
+Suggests:
+    covr,
+    spelling,
+    testthat (>= 2.1.0)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Language: en-US
+URL: https://jolars.github.io/CSwR-Package/
+BugReports: https://github.com/jolars/CSwR-Package/issues
+License: MIT + file LICENSE
