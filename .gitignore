@@ -69,3 +69,6 @@ result-*
 devenv.local.nix
 devenv.local.yaml
 docs
+
+# pre-commit (symlink to nix store)
+.pre-commit-config.yaml
