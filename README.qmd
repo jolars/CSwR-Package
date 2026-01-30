@@ -15,7 +15,8 @@ The CSwR package is a companion to the book *Computational Statistics with R* av
 
 You can install the development version from GitHub:
 
-```r
+```{r}
+#| eval: false
 # install.packages("remotes")
 remotes::install_github("jolars/CSwR-Package")
 ```
@@ -43,7 +44,7 @@ The package includes:
 
 ## Usage
 
-```r
+```{r}
 library(CSwR)
 
 # Load and explore datasets
@@ -61,7 +62,9 @@ term <- terminator(cond = quote(residual < 1e-6), Delta = 10)
 
 ## Documentation
 
-For detailed documentation and examples, visit the [package website](https://jolars.github.io/CSwR-Package/) or see the book at [cswr.nrhstat.org](https://cswr.nrhstat.org).
+For detailed documentation and examples, visit the [package
+website](https://jolars.github.io/CSwR-Package/) or see the book at
+[cswr.nrhstat.org](https://cswr.nrhstat.org).
 
 ## License
 

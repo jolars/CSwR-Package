@@ -61,7 +61,17 @@ library(CSwR)
 # Load and explore datasets
 data(greenland)
 head(greenland)
+```
 
+      Year Month Temp_nuuk Temp_Qaqortoq Temp_diff
+    1 1873     1     -12.1          -9.9      -2.2
+    2 1874     1     -13.1         -11.6      -1.5
+    3 1875     1      -6.6          -6.3      -0.3
+    4 1876     1     -11.1          -8.3      -2.8
+    5 1877     1     -14.5          -8.8      -5.7
+    6 1878     1      -7.7          -6.8      -0.9
+
+``` r
 # Create a tracer for monitoring algorithm progress
 tr <- tracer(c("x", "residual"), time = TRUE)
 # Use tr$tracer as a callback in your iterative function
