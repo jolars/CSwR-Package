@@ -21,6 +21,9 @@
           roxygen2
           spelling
           testthat
+          ggplot2
+          rlang
+          bench
           covr
         ];
       }

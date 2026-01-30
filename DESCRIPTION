@@ -1,6 +1,6 @@
 Package: CSwR
 Title: Companion package for the book "Computational Statistics with R"
-Version: 0.0.0.9000
+Version: 0.1.2.9000
 Authors@R:
     c(
       person(
@@ -18,10 +18,15 @@ Authors@R:
         comment = c(ORCID = "0000-0002-4029-5945")
       )
     )
-Description: Contains data sets and functions used in the book
-    "Computational Statistics with R".
+Description:
+    Data and functions used in the book Computational Statistics with R
+    \url{cswr.nrhstat.org}.
 Depends:
-    R (>= 4.0.0)
+    R (>= 3.5.0)
+Imports:
+    bench,
+    ggplot2,
+    rlang
 Suggests:
     covr,
     spelling,

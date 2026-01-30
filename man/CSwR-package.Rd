@@ -6,7 +6,7 @@
 \alias{CSwR-package}
 \title{CSwR: Companion package for the book "Computational Statistics with R"}
 \description{
-Contains data sets and functions used in the book "Computational Statistics with R".
+Data and functions used in the book Computational Statistics with R \url{cswr.nrhstat.org}.
 }
 \seealso{
 Useful links:
