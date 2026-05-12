@@ -12,8 +12,20 @@
 \item{...}{other arguments (currently ignored)}
 }
 \value{
-\code{print}
+The list of objects from the terminator's evaluation environment,
+returned invisibly.
 }
 \description{
 Print terminator information
+}
+\examples{
+term <- terminator(quote(i >= 3), print = FALSE)
+
+for (i in 1:5) {
+  if (term$terminator()) {
+    break
+  }
+}
+
+print(term, all.names = TRUE)
 }

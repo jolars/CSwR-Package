@@ -23,3 +23,12 @@ a list
 \description{
 Subsetting tracer objects
 }
+\examples{
+tr <- tracer("i", Delta = 0)
+
+for (i in 1:3) {
+  tr$tracer()
+}
+
+tr[1]
+}

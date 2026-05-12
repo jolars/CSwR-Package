@@ -23,7 +23,6 @@ a cache of random numbers that can then be used sequentially. Whenever the
 cache runs empty new numbers are generated automatically.
 }
 \examples{
-
 runif_stream <- rng_stream(10, runif, min = -1, max = 1)
 runif_stream()
 }

@@ -23,3 +23,6 @@ The plotter function returns a quoted expression that adds points
 to a current plot. For use with tracer and terminator objects to
 iteratively update plots during long running function evaluations.
 }
+\examples{
+plotter("i")
+}

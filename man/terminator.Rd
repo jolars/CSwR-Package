@@ -44,3 +44,14 @@ object is, however, to evaluate a termination condition, which can
 trigger termination of a loop. Terminator objects do not save trace
 information and do not trace runtime.
 }
+\examples{
+term <- terminator(quote(i >= 3), print = FALSE)
+
+for (i in 1:5) {
+  if (term$terminator()) {
+    break
+  }
+}
+
+i
+}

@@ -63,15 +63,14 @@ the function that is to be traced, it can be inserted using \code{base::trace},
 or it can be passed as an argument to any function with a callback argument.
 }
 \examples{
-
 test_tracer <- tracer(c("m", "m_sq"), expr = quote(m_sq <- m^2))
 
 test <- function(n, cb = NULL) {
   for(i in 1:n) {
     m <- 2 * i
     Sys.sleep(0.1)
-    if(!is.null(cb)) cb()
-    }
+    if (!is.null(cb)) cb()
+  }
 }
 
 test(10, test_tracer$tracer)

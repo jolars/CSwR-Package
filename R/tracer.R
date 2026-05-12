@@ -40,15 +40,14 @@
 #' @export
 #'
 #' @examples
-#'
 #' test_tracer <- tracer(c("m", "m_sq"), expr = quote(m_sq <- m^2))
 #'
 #' test <- function(n, cb = NULL) {
 #'   for(i in 1:n) {
 #'     m <- 2 * i
 #'     Sys.sleep(0.1)
-#'     if(!is.null(cb)) cb()
-#'     }
+#'     if (!is.null(cb)) cb()
+#'   }
 #' }
 #'
 #' test(10, test_tracer$tracer)
@@ -239,6 +238,15 @@ new_plotter_window <- function(...) {
 #'
 #' @return a list
 #' @export
+#'
+#' @examples
+#' tr <- tracer("i", Delta = 0)
+#'
+#' for (i in 1:3) {
+#'   tr$tracer()
+#' }
+#'
+#' tr[1]
 '[.tracer' <- function(x, i, j, ..., drop = TRUE) {
   values <- x$get(...)[i]
   if (length(values) == 1 && drop) {
@@ -258,6 +266,16 @@ new_plotter_window <- function(...) {
 #' of the traced objects, and if time is traced an additional column, \code{.time},
 #' containing the cumulative runtime in seconds.
 #' @export
+#'
+#' @examples
+#' tr <- tracer("i", Delta = 0)
+#'
+#' for (i in 1:3) {
+#'   tr$tracer()
+#' }
+#'
+#' summary(tr)
+#' print(tr)
 summary.tracer <- function(object, ...) {
   object <- suppressWarnings(object$get(simplify = TRUE))
   if (".time" %in% colnames(object)) {
@@ -282,6 +300,15 @@ print.tracer <- function(x, ...) print(x$get(simplify = TRUE))
 #' @return a ggplot object
 #' @import ggplot2
 #' @export
+#'
+#' @examples
+#' tr <- tracer("i", Delta = 0)
+#'
+#' for (i in 1:3) {
+#'   tr$tracer()
+#' }
+#'
+#' ggplot2::autoplot(tr, i)
 autoplot.tracer <- function(object, y, ...) {
   autoplot(summary(object), {{ y }}, ...)
 }
@@ -313,6 +340,9 @@ autoplot.trace <- function(object, y, log = TRUE, ...) {
 #'
 #' @return a quoted expression
 #' @export
+#'
+#' @examples
+#' plotter("i")
 plotter <- function(y, col = "black", lty = "solid", pch = 1) {
   bquote(
     {

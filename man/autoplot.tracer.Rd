@@ -24,3 +24,12 @@ a ggplot object
 \description{
 Plots the value of a traced object on a log-scale against runtime.
 }
+\examples{
+tr <- tracer("i", Delta = 0)
+
+for (i in 1:3) {
+  tr$tracer()
+}
+
+ggplot2::autoplot(tr, i)
+}

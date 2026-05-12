@@ -31,6 +31,16 @@
 #' \code{clear}.
 #' @export
 #'
+#' @examples
+#' term <- terminator(quote(i >= 3), print = FALSE)
+#'
+#' for (i in 1:5) {
+#'   if (term$terminator()) {
+#'     break
+#'   }
+#' }
+#'
+#' i
 terminator <- function(
   cond = FALSE,
   Delta = 1,
@@ -129,8 +139,21 @@ terminator <- function(
 #' @param x   a terminator object
 #' @param ... other arguments (currently ignored)
 #'
-#' @return \code{print}
+#' @return The list of objects from the terminator's evaluation environment,
+#' returned invisibly.
+#'
 #' @export
+#'
+#' @examples
+#' term <- terminator(quote(i >= 3), print = FALSE)
+#'
+#' for (i in 1:5) {
+#'   if (term$terminator()) {
+#'     break
+#'   }
+#' }
+#'
+#' print(term, all.names = TRUE)
 print.terminator <- function(x, ...) {
   env <- environment(x$terminator)$env
   values <- mget(ls(env, ...), env)

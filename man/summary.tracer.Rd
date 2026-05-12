@@ -25,3 +25,13 @@ containing the cumulative runtime in seconds.
 \description{
 Summarize and print trace information
 }
+\examples{
+tr <- tracer("i", Delta = 0)
+
+for (i in 1:3) {
+  tr$tracer()
+}
+
+summary(tr)
+print(tr)
+}

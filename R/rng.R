@@ -13,7 +13,6 @@
 #' @export
 #'
 #' @examples
-#'
 #' runif_stream <- rng_stream(10, runif, min = -1, max = 1)
 #' runif_stream()
 rng_stream <- function(m, rng, ...) {
