@@ -49,11 +49,14 @@ terminator <- function(
       print <- FALSE
     }
   }
+
   cond_expr <- is.call(cond) || is.expression(cond)
   plotter_expr <- is.call(plotter) || is.expression(plotter)
+
   # Environment for evaluation of the condition
   env <- new.env()
   env$.__n <- 1
+
   if (plotter_expr) {
     new_plotter_window(...)
   }
@@ -61,6 +64,7 @@ terminator <- function(
   terminator <- function() {
     terminate <- isTRUE(cond)
     n <- env$.__n
+
     if (isTRUE(Delta > 0) && n %% Delta == 0) {
       # The condition is evaluated in its own environment to ensure that it
       # does not accidentally overwrite variables in the calling environment.
@@ -105,11 +109,13 @@ terminator <- function(
     env <<- new.env()
     env$.__n <- 1
     plotter_expr_mod <- is.call(plotter) || is.expression(plotter)
+
     if (plotter_expr_mod) {
       plotter_expr <<- plotter_expr_mod
       plotter <<- plotter
       plotter <- FALSE
     }
+
     if (plotter_expr && isTRUE(plotter)) {
       new_plotter_window(...)
     }
@@ -128,5 +134,6 @@ terminator <- function(
 print.terminator <- function(x, ...) {
   env <- environment(x$terminator)$env
   values <- mget(ls(env, ...), env)
+
   print(values)
 }

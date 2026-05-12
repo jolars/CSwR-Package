@@ -21,6 +21,7 @@ rng_stream <- function(m, rng, ...) {
   cache <- do.call(rng, c(m, args))
   j <- 0
   fact <- 1
+
   next_rn <- function(r = m) {
     j <<- j + 1
     if (j > m) {
@@ -33,5 +34,6 @@ rng_stream <- function(m, rng, ...) {
     }
     cache[j]
   }
+
   next_rn
 }

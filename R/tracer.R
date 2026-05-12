@@ -66,11 +66,13 @@ tracer <- function(
   force(Delta)
   force(time)
   force(save)
+
   gc_last_time <- gc.time()[3]
   values_save <- list()
   last_time <- bench::hires_time()
   eval_expr <- is.call(expr) || is.expression(expr)
   plotter_expr <- is.call(plotter) || is.expression(plotter)
+
   # Environment for evaluation of the expression or plotter
   env <- new.env()
   if (plotter_expr) {
@@ -86,20 +88,24 @@ tracer <- function(
     if (gc_time_diff > 0) {
       time_diff <- max(time_diff - gc_time_diff, 0)
     }
+
     # The expression is evaluated in its own environment to ensure that it
     # does not accidentally overwrite variables in the calling environment.
     # To give the expression access to the calling environment it is assigned
     # as the enclosing environment.
     envir <- parent.frame()
     parent.env(env) <- envir
+
     if (eval_expr) {
       tryCatch(eval(expr, envir = env), error = function(e) warning(e))
     }
+
     if (is.null(objects)) {
       objects <- ls(envir)
     }
 
     values <- mget(objects, envir = envir, ifnotfound = list(NA))
+
     if (eval_expr) {
       na_val <- unlist(lapply(values, function(x) all(is.na(x))))
       values <- values[!na_val]
@@ -109,6 +115,7 @@ tracer <- function(
         mget(expr_objects, envir = env, ifnotfound = list(NA))
       )
     }
+
     if (isTRUE(Delta > 0) && (n == 1 || n %% Delta == 0)) {
       if (plotter_expr) {
         tryCatch(eval(plotter, envir = env), error = function(e) warning(e))
@@ -122,15 +129,18 @@ tracer <- function(
         sep = ""
       )
     }
+
     if (save) {
       if (time) {
         values[[".time"]] <- time_diff
       }
       values_save[[n]] <<- values
     }
+
     env$.__n <- n + 1
     gc_last_time <<- gc.time()[3]
     last_time <<- bench::hires_time()
+
     invisible(NULL)
   }
 
@@ -168,6 +178,7 @@ tracer <- function(
       values_save <- do.call(cbind, values_save)
       row.names(values_save) <- seq_len(nrow(values_save))
     }
+
     values_save
   }
 
@@ -178,17 +189,26 @@ tracer <- function(
     values_save <<- list()
     last_time <<- bench::hires_time()
     plotter_expr_mod <- is.call(plotter) || is.expression(plotter)
+
     if (plotter_expr_mod) {
       plotter_expr <<- plotter_expr_mod
       plotter <<- plotter
       plotter <- FALSE
     }
+
     if (plotter_expr && isTRUE(plotter)) {
       new_plotter_window(...)
     }
   }
 
-  structure(list(tracer = tracer, get = get, clear = clear), class = "tracer")
+  structure(
+    list(
+      tracer = tracer,
+      get = get,
+      clear = clear
+    ),
+    class = "tracer"
+  )
 }
 
 # If x is a matrix object which encodes a column vector, then the transpose of x
@@ -298,6 +318,7 @@ plotter <- function(y, col = "black", lty = "solid", pch = 1) {
     {
       .__y_val <- get(.(y))
       points(.__n, .__y_val, col = .(col), pch = .(pch))
+
       if (exists(".__n_old") && exists(".__y_val_old")) {
         lines(
           c(.__n_old, .__n),
@@ -306,6 +327,7 @@ plotter <- function(y, col = "black", lty = "solid", pch = 1) {
           lty = .(lty)
         )
       }
+
       .__n_old <- .__n
       .__y_val_old <- .__y_val
     }
