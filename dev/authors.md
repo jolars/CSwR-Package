@@ -2,10 +2,11 @@
 
 ## Authors
 
-- **Niels Richard Hansen**. Author, maintainer.
+- **Niels Richard Hansen**. Author.
   [](https://orcid.org/0000-0003-3883-365X)
 
-- **Johan Larsson**. Author. [](https://orcid.org/0000-0002-4029-5945)
+- **Johan Larsson**. Author, maintainer.
+  [](https://orcid.org/0000-0002-4029-5945)
 
 ## Citation
 
