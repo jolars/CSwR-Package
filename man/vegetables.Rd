@@ -5,11 +5,11 @@
 \alias{vegetables}
 \title{Vegetable sale}
 \format{
-A data frame with 1056 rows and 3 columns:
+A data frame with 1066 rows and 3 columns:
 \describe{
 \item{\code{sale}}{a numeric vector. Number of items sold in a week}
 \item{\code{normalSale}}{a numeric vector. Estimated normal sale that week}
-\item{\code{store}}{a factor. Id number of the different stores}
+\item{\code{store}}{a character vector. Id of the different stores}
 }
 }
 \source{

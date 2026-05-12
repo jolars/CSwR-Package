@@ -21,10 +21,10 @@
 #' Monthly average temperatures in degree Celsius in Nuuk and Qaqortoq from 1873 to 2013.
 #'
 #' @format
-#' A data frame with 147 rows and 5 columns:
+#' A data frame with 1692 rows and 5 columns:
 #' \describe{
 #'   \item{Year}{Year (numeric)}
-#'   \item{Month}{Month (encoded as a factor with levels 1 to 12)}
+#'   \item{Month}{Month (integer, 1 to 12)}
 #'   \item{Temp_nuuk}{Montly mean temperature in Nuuk}
 #'   \item{Temp_Qaqortoq}{Montly mean temperature in Qaqortoq}
 #'   \item{Temp_diff}{Temperature difference, `Temp_nuuk - Temp_Qaqortoq`}
@@ -43,7 +43,7 @@
 #' to collinearity.
 #'
 #' @format
-#' A data frame with 39,644 rows and 53 columns:
+#' A data frame with 39,644 rows and 54 columns:
 #' \describe{
 #'   \item{n_tokens_title}{Number of words in the title}
 #'   \item{n_tokens_content}{Number of words in the content}
@@ -109,11 +109,11 @@
 #' Weekly sale of frozen vegetables in different stores.
 #'
 #' @format
-#' A data frame with 1056 rows and 3 columns:
+#' A data frame with 1066 rows and 3 columns:
 #' \describe{
 #'   \item{\code{sale}}{a numeric vector. Number of items sold in a week}
 #'   \item{\code{normalSale}}{a numeric vector. Estimated normal sale that week}
-#'   \item{\code{store}}{a factor. Id number of the different stores}
+#'   \item{\code{store}}{a character vector. Id of the different stores}
 #' }
 #'
 #' @source Obtained by package author.

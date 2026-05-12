@@ -5,7 +5,7 @@
 \alias{news}
 \title{Social media news sharing}
 \format{
-A data frame with 39,644 rows and 53 columns:
+A data frame with 39,644 rows and 54 columns:
 \describe{
 \item{n_tokens_title}{Number of words in the title}
 \item{n_tokens_content}{Number of words in the content}
