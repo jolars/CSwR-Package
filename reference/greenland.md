@@ -11,7 +11,7 @@ greenland
 
 ## Format
 
-A data frame with 147 rows and 5 columns:
+A data frame with 1692 rows and 5 columns:
 
 - Year:
 
@@ -19,7 +19,7 @@ A data frame with 147 rows and 5 columns:
 
 - Month:
 
-  Month (encoded as a factor with levels 1 to 12)
+  Month (integer, 1 to 12)
 
 - Temp_nuuk:
 

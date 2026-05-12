@@ -10,7 +10,7 @@ vegetables
 
 ## Format
 
-A data frame with 1056 rows and 3 columns:
+A data frame with 1066 rows and 3 columns:
 
 - `sale`:
 
@@ -22,7 +22,7 @@ A data frame with 1056 rows and 3 columns:
 
 - `store`:
 
-  a factor. Id number of the different stores
+  a character vector. Id of the different stores
 
 ## Source
 

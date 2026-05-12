@@ -16,7 +16,7 @@ news
 
 ## Format
 
-A data frame with 39,644 rows and 53 columns:
+A data frame with 39,644 rows and 54 columns:
 
 - n_tokens_title:
 

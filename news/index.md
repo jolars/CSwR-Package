@@ -2,6 +2,6 @@
 
 ## CSwR (development version)
 
-### Initial release
-
-This is the initial development version of the CSwR package.
+This is the first release of the CSwR package, which is a
+package-companion to the book “Computational Statistics with R” by Niels
+Richard Hansen and Johan Larsson (<https://https://cswr.nrhstat.org/>).

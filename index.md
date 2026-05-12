@@ -11,8 +11,8 @@ You can install the development version from GitHub:
 
 ``` r
 
-# install.packages("remotes")
-remotes::install_github("jolars/CSwR-Package")
+# install.packages("pak")
+pak::pak("jolars/CSwR-Package")
 ```
 
 ## Features
