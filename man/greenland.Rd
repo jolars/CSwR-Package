@@ -15,7 +15,7 @@ A data frame with 1692 rows and 5 columns:
 }
 }
 \source{
-\url{https://crudata.uea.ac.uk/cru/data/greenland}
+\url{https://crudata.uea.ac.uk/cru/data/greenland/}
 }
 \usage{
 greenland

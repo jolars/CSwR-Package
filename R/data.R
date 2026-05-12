@@ -13,7 +13,7 @@
 #'   \item{Range}{High - Low}
 #' }
 #'
-#' @source <https://crudata.uea.ac.uk/cru/data/greenland>
+#' @source <https://crudata.uea.ac.uk/cru/data/greenland/>
 "nuuk"
 
 #' South west Greenland temperature data
@@ -30,7 +30,7 @@
 #'   \item{Temp_diff}{Temperature difference, `Temp_nuuk - Temp_Qaqortoq`}
 #' }
 #'
-#' @source <https://crudata.uea.ac.uk/cru/data/greenland>
+#' @source <https://crudata.uea.ac.uk/cru/data/greenland/>
 "greenland"
 
 #' Social media news sharing

@@ -16,7 +16,7 @@ A data frame with 147 rows and 6 columns:
 }
 }
 \source{
-\url{https://crudata.uea.ac.uk/cru/data/greenland}
+\url{https://crudata.uea.ac.uk/cru/data/greenland/}
 }
 \usage{
 nuuk
