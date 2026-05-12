@@ -27,6 +27,7 @@
           readr
           here
           tidyverse
+          quarto
         ];
       }
     );
