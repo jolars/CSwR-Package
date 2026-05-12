@@ -11,7 +11,6 @@
     pkgs.quartoMinimal
   ];
 
-  # https://devenv.sh/languages/
   languages.r = {
     enable = true;
     package = (
@@ -33,7 +32,6 @@
     );
   };
 
-  # https://devenv.sh/git-hooks/
   git-hooks.hooks = {
     air = {
       enable = true;
@@ -42,6 +40,4 @@
       language = "system";
     };
   };
-
-  # See full reference at https://devenv.sh/reference/options/
 }
