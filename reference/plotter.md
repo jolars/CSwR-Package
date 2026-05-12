@@ -31,3 +31,19 @@ plotter(y, col = "black", lty = "solid", pch = 1)
 ## Value
 
 a quoted expression
+
+## Examples
+
+``` r
+plotter("i")
+#> {
+#>     .__y_val <- get("i")
+#>     points(.__n, .__y_val, col = "black", pch = 1)
+#>     if (exists(".__n_old") && exists(".__y_val_old")) {
+#>         lines(c(.__n_old, .__n), c(.__y_val_old, .__y_val), col = "black", 
+#>             lty = "solid")
+#>     }
+#>     .__n_old <- .__n
+#>     .__y_val_old <- .__y_val
+#> }
+```

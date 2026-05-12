@@ -33,3 +33,15 @@ autoplot(object, y, log = TRUE, ...)
 ## Value
 
 a ggplot object
+
+## Examples
+
+``` r
+tr <- tracer("i", Delta = 0)
+
+for (i in 1:3) {
+  tr$tracer()
+}
+
+ggplot2::autoplot(tr, i)
+```

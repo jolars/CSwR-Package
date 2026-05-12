@@ -31,3 +31,24 @@ print(x, ...)
 `summary` returns a data frame (of class trace) with columns containing
 the values of the traced objects, and if time is traced an additional
 column, `.time`, containing the cumulative runtime in seconds.
+
+## Examples
+
+``` r
+tr <- tracer("i", Delta = 0)
+
+for (i in 1:3) {
+  tr$tracer()
+}
+
+summary(tr)
+#>   i        .time
+#> 1 1 0.000000e+00
+#> 2 2 3.576279e-06
+#> 3 3 6.914139e-06
+print(tr)
+#>   i        .time
+#> 1 1 5.841255e-04
+#> 2 2 3.576279e-06
+#> 3 3 3.337860e-06
+```

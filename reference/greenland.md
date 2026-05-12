@@ -35,4 +35,4 @@ A data frame with 1692 rows and 5 columns:
 
 ## Source
 
-<https://crudata.uea.ac.uk/cru/data/greenland>
+<https://crudata.uea.ac.uk/cru/data/greenland/>

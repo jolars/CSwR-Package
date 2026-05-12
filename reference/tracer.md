@@ -78,15 +78,14 @@ can be passed as an argument to any function with a callback argument.
 ## Examples
 
 ``` r
-
 test_tracer <- tracer(c("m", "m_sq"), expr = quote(m_sq <- m^2))
 
 test <- function(n, cb = NULL) {
   for(i in 1:n) {
     m <- 2 * i
     Sys.sleep(0.1)
-    if(!is.null(cb)) cb()
-    }
+    if (!is.null(cb)) cb()
+  }
 }
 
 test(10, test_tracer$tracer)
@@ -103,13 +102,13 @@ test(10, test_tracer$tracer)
 summary(test_tracer)
 #>     m m_sq     .time
 #> 1   2    4 0.0000000
-#> 2   4   16 0.1001790
-#> 3   6   36 0.2003813
-#> 4   8   64 0.3005953
-#> 5  10  100 0.4007998
-#> 6  12  144 0.5010006
-#> 7  14  196 0.6012206
-#> 8  16  256 0.7014246
-#> 9  18  324 0.8016403
-#> 10 20  400 0.9018507
+#> 2   4   16 0.1001410
+#> 3   6   36 0.2003269
+#> 4   8   64 0.3005133
+#> 5  10  100 0.4006889
+#> 6  12  144 0.5008771
+#> 7  14  196 0.6010556
+#> 8  16  256 0.7012398
+#> 9  18  324 0.8014181
+#> 10 20  400 0.9015787
 ```

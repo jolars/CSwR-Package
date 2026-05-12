@@ -1,7 +1,7 @@
-# CSwR: Companion Package for the Book "Computational Statistics with R"
+# CSwR: Companion to the Book "Computational Statistics with R"
 
-Data and functions used in the book Computational Statistics with R
-[cswr.nrhstat.org](https://jolars.github.io/CSwR-Package/reference/cswr.nrhstat.org).
+Provides data sets and functions used in the book "Computational
+Statistics with R" (<https://cswr.nrhstat.org>).
 
 ## See also
 

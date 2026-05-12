@@ -33,15 +33,18 @@ called from within a function with `...` as formal argument, use
 ## Examples
 
 ``` r
-
 affine <- function(a, b) {
   function(x) a * x + b
 }
+
 a <- 1
 b <- 1
+
 affine_11 <- affine(a, b)
+
 a <- 2
 b <- 2
+
 affine_11(1) # Gives 4 and not 2 due to lazy evaluation
 #> [1] 4
 
@@ -49,11 +52,15 @@ affine_forced <- function(a, b) {
   force_all()
   function(x) a * x + b
 }
+
 a <- 1
 b <- 1
+
 affine_11 <- affine_forced(a, b)
+
 a <- 2
 b <- 2
+
 affine_11(1) # Gives 2
 #> [1] 2
 ```
