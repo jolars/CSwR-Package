@@ -33,6 +33,7 @@ called from within a function with `...` as formal argument, use
 ## Examples
 
 ``` r
+
 affine <- function(a, b) {
   function(x) a * x + b
 }

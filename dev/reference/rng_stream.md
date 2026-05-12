@@ -32,7 +32,8 @@ cache whenever it runs empty.
 ## Examples
 
 ``` r
+
 runif_stream <- rng_stream(10, runif, min = -1, max = 1)
 runif_stream()
-#> [1] -0.9852011
+#> [1] -0.8384997
 ```

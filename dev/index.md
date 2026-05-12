@@ -10,6 +10,7 @@ teaching computational statistics concepts.
 You can install the development version from GitHub:
 
 ``` r
+
 # install.packages("remotes")
 remotes::install_github("jolars/CSwR-Package")
 ```
@@ -54,6 +55,7 @@ The package includes:
 ## Usage
 
 ``` r
+
 library(CSwR)
 
 # Load and explore datasets
@@ -72,6 +74,7 @@ head(greenland)
 ```
 
 ``` r
+
 # Create a tracer for monitoring algorithm progress
 tr <- tracer(c("x", "residual"), time = TRUE)
 # Use tr$tracer as a callback in your iterative function
