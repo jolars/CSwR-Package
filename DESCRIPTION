@@ -36,6 +36,6 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 Language: en-US
-URL: https://jolars.github.io/CSwR-Package/
+URL: https://jolars.github.io/CSwR-Package/, https://cswr.nrhstat.org/
 BugReports: https://github.com/jolars/CSwR-Package/issues
 License: MIT + file LICENSE
