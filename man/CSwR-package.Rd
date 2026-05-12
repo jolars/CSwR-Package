@@ -17,11 +17,11 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Niels Richard Hansen \email{Niels.R.Hansen@math.ku.dk} (\href{https://orcid.org/0000-0003-3883-365X}{ORCID})
+\strong{Maintainer}: Johan Larsson \email{johan@jolars.co} (\href{https://orcid.org/0000-0002-4029-5945}{ORCID})
 
 Authors:
 \itemize{
-  \item Johan Larsson \email{johan@jolars.co} (\href{https://orcid.org/0000-0002-4029-5945}{ORCID})
+  \item Niels Richard Hansen \email{Niels.R.Hansen@math.ku.dk} (\href{https://orcid.org/0000-0003-3883-365X}{ORCID})
 }
 
 }
