@@ -25,6 +25,8 @@
           rlang
           bench
           covr
+          readr
+          here
         ];
       }
     );
