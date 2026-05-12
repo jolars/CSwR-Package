@@ -7,7 +7,14 @@ teaching computational statistics concepts.
 
 ## Installation
 
-You can install the development version from GitHub:
+You can install the latest version from CRAN with:
+
+``` r
+
+install.packages("CSwR")
+```
+
+Or install the development version from GitHub with:
 
 ``` r
 
