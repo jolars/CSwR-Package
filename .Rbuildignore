@@ -51,3 +51,5 @@
 ^\.devenv\.flake\.nix$
 ^\.pre-commit-config\.yaml$
 ^panache\.toml$
+^AGENTS\.md$
+^CLAUDE\.md$
