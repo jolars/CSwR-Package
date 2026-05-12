@@ -20,6 +20,9 @@
 # Output files from R CMD check
 /*.Rcheck/
 
+# Default device output from non-interactive plotting
+Rplots.pdf
+
 # RStudio files
 .Rproj.user/
 
