@@ -4,7 +4,7 @@
 \name{CSwR-package}
 \alias{CSwR}
 \alias{CSwR-package}
-\title{CSwR: Companion package for the book "Computational Statistics with R"}
+\title{CSwR: Companion Package for the Book "Computational Statistics with R"}
 \description{
 Data and functions used in the book Computational Statistics with R \url{cswr.nrhstat.org}.
 }
@@ -12,6 +12,7 @@ Data and functions used in the book Computational Statistics with R \url{cswr.nr
 Useful links:
 \itemize{
   \item \url{https://jolars.github.io/CSwR-Package/}
+  \item \url{https://cswr.nrhstat.org/}
   \item Report bugs at \url{https://github.com/jolars/CSwR-Package/issues}
 }
 
