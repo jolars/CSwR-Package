@@ -5,11 +5,16 @@ format: gfm
 # CSwR
 
 <!-- badges: start -->
-[![R build status](https://github.com/jolars/CSwR-Package/workflows/R-CMD-check/badge.svg)](https://github.com/jolars/CSwR-Package/actions)
-[![Code coverage](https://codecov.io/gh/jolars/CSwR-Package/graph/badge.svg)](https://app.codecov.io/gh/jolars/CSwR-Package)
+[![R build
+status](https://github.com/jolars/CSwR-Package/workflows/R-CMD-check/badge.svg)](https://github.com/jolars/CSwR-Package/actions)
+[![Code
+coverage](https://codecov.io/gh/jolars/CSwR-Package/graph/badge.svg)](https://app.codecov.io/gh/jolars/CSwR-Package)
 <!-- badges: end -->
 
-The CSwR package is a companion to the book *Computational Statistics with R* available at [cswr.nrhstat.org](https://cswr.nrhstat.org). It provides data and utility functions used throughout the book for teaching computational statistics concepts.
+The CSwR package is a companion to the book *Computational Statistics with R*
+available at [cswr.nrhstat.org](https://cswr.nrhstat.org). It provides data and
+utility functions used throughout the book for teaching computational statistics
+concepts.
 
 ## Installation
 
@@ -17,8 +22,10 @@ You can install the development version from GitHub:
 
 ```{r}
 #| eval: false
-# install.packages("remotes")
-remotes::install_github("jolars/CSwR-Package")
+#| label: install
+
+# install.packages("pak")
+pak::pak("jolars/CSwR-Package")
 ```
 
 ## Features
@@ -32,19 +39,26 @@ The package includes:
   - `angle` - Torsion angles from protein structure (1HMP)
   - `news` - Social media news sharing features from Mashable articles
 
-- **Tracer objects** (`tracer()`) - Collect, print, and visualize trace information during function evaluation for debugging and performance analysis
+- **Tracer objects** (`tracer()`) - Collect, print, and visualize trace
+  information during function evaluation for debugging and performance analysis
 
-- **Terminator objects** (`terminator()`) - Define termination conditions for iterative algorithms with callback support
+- **Terminator objects** (`terminator()`) - Define termination conditions for
+  iterative algorithms with callback support
 
-- **Random number streams** (`rng_stream()`) - Efficient cached random number generation
+- **Random number streams** (`rng_stream()`) - Efficient cached random number
+  generation
 
-- **Force evaluation** (`force_all()`) - Utility to force evaluation of all function arguments and avoid lazy evaluation pitfalls
+- **Force evaluation** (`force_all()`) - Utility to force evaluation of all
+  function arguments and avoid lazy evaluation pitfalls
 
-- **Plotter expressions** (`plotter()`) - Create expressions for iterative plot updates during long-running computations
+- **Plotter expressions** (`plotter()`) - Create expressions for iterative plot
+  updates during long-running computations
 
 ## Usage
 
 ```{r}
+#| label: example
+
 library(CSwR)
 
 # Load and explore datasets
