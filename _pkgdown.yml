@@ -1,6 +1,3 @@
-development:
-  mode: auto
-
 url: https://jolars.github.io/CSwR-Package/
 
 template:
