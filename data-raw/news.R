@@ -14,4 +14,4 @@ news <- dplyr::select(
 ) %>%
   as.data.frame()
 
-usethis::use_data(news, overwrite = TRUE)
+usethis::use_data(news, overwrite = TRUE, compress = "xz")
