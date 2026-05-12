@@ -27,6 +27,7 @@
           covr
           readr
           here
+          tidyverse
         ];
       }
     );
