@@ -9,8 +9,8 @@ A data frame with 1692 rows and 5 columns:
 \describe{
 \item{Year}{Year (numeric)}
 \item{Month}{Month (integer, 1 to 12)}
-\item{Temp_nuuk}{Montly mean temperature in Nuuk}
-\item{Temp_Qaqortoq}{Montly mean temperature in Qaqortoq}
+\item{Temp_nuuk}{Monthly mean temperature in Nuuk}
+\item{Temp_Qaqortoq}{Monthly mean temperature in Qaqortoq}
 \item{Temp_diff}{Temperature difference, \code{Temp_nuuk - Temp_Qaqortoq}}
 }
 }

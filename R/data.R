@@ -7,9 +7,9 @@
 #' \describe{
 #'   \item{Year}{Year (numeric)}
 #'   \item{Temperature}{Annual mean temperature}
-#'   \item{Median}{Annual median of montly mean temperatures}
-#'   \item{High}{Annual maximum of montly mean temperatures}
-#'   \item{Low}{Annual minimum of montly mean temperatures}
+#'   \item{Median}{Annual median of monthly mean temperatures}
+#'   \item{High}{Annual maximum of monthly mean temperatures}
+#'   \item{Low}{Annual minimum of monthly mean temperatures}
 #'   \item{Range}{High - Low}
 #' }
 #'
@@ -25,8 +25,8 @@
 #' \describe{
 #'   \item{Year}{Year (numeric)}
 #'   \item{Month}{Month (integer, 1 to 12)}
-#'   \item{Temp_nuuk}{Montly mean temperature in Nuuk}
-#'   \item{Temp_Qaqortoq}{Montly mean temperature in Qaqortoq}
+#'   \item{Temp_nuuk}{Monthly mean temperature in Nuuk}
+#'   \item{Temp_Qaqortoq}{Monthly mean temperature in Qaqortoq}
 #'   \item{Temp_diff}{Temperature difference, `Temp_nuuk - Temp_Qaqortoq`}
 #' }
 #'

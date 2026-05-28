@@ -9,9 +9,9 @@ A data frame with 147 rows and 6 columns:
 \describe{
 \item{Year}{Year (numeric)}
 \item{Temperature}{Annual mean temperature}
-\item{Median}{Annual median of montly mean temperatures}
-\item{High}{Annual maximum of montly mean temperatures}
-\item{Low}{Annual minimum of montly mean temperatures}
+\item{Median}{Annual median of monthly mean temperatures}
+\item{High}{Annual maximum of monthly mean temperatures}
+\item{Low}{Annual minimum of monthly mean temperatures}
 \item{Range}{High - Low}
 }
 }
