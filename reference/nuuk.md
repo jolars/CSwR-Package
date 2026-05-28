@@ -22,15 +22,15 @@ A data frame with 147 rows and 6 columns:
 
 - Median:
 
-  Annual median of montly mean temperatures
+  Annual median of monthly mean temperatures
 
 - High:
 
-  Annual maximum of montly mean temperatures
+  Annual maximum of monthly mean temperatures
 
 - Low:
 
-  Annual minimum of montly mean temperatures
+  Annual minimum of monthly mean temperatures
 
 - Range:
 

@@ -23,11 +23,11 @@ A data frame with 1692 rows and 5 columns:
 
 - Temp_nuuk:
 
-  Montly mean temperature in Nuuk
+  Monthly mean temperature in Nuuk
 
 - Temp_Qaqortoq:
 
-  Montly mean temperature in Qaqortoq
+  Monthly mean temperature in Qaqortoq
 
 - Temp_diff:
 
