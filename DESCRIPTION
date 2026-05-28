@@ -1,6 +1,6 @@
 Package: CSwR
 Title: Companion to the Book "Computational Statistics with R"
-Version: 0.1.2.9000
+Version: 0.1.3
 Authors@R:
     c(
       person(
