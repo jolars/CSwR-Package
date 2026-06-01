@@ -8,6 +8,8 @@
 status](https://github.com/jolars/CSwR-Package/workflows/R-CMD-check/badge.svg)](https://github.com/jolars/CSwR-Package/actions)
 [![Code
 coverage](https://codecov.io/gh/jolars/CSwR-Package/graph/badge.svg)](https://app.codecov.io/gh/jolars/CSwR-Package)
+[![CRAN
+Badge](http://www.r-pkg.org/badges/version/CSwR.png)](https://cran.r-project.org/package=CSwR)
 <!-- badges: end -->
 
 The CSwR package is a companion to the book *Computational Statistics
