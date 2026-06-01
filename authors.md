@@ -14,13 +14,13 @@ Source:
 [`DESCRIPTION`](https://github.com/jolars/CSwR-Package/blob/main/DESCRIPTION)
 
 Hansen N, Larsson J (2026). *CSwR: Companion to the Book "Computational
-Statistics with R"*. R package version 0.1.3,
+Statistics with R"*. R package version 0.1.3.9000,
 <https://jolars.github.io/CSwR-Package/>.
 
     @Manual{,
       title = {CSwR: Companion to the Book "Computational Statistics with R"},
       author = {Niels Richard Hansen and Johan Larsson},
       year = {2026},
-      note = {R package version 0.1.3},
+      note = {R package version 0.1.3.9000},
       url = {https://jolars.github.io/CSwR-Package/},
     }
