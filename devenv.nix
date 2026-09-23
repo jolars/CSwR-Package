@@ -7,7 +7,7 @@
   packages = [
     pkgs.bashInteractive
     pkgs.go-task
-    pkgs.air
+    pkgs.arity
     pkgs.quartoMinimal
   ];
 
@@ -34,9 +34,9 @@
   };
 
   git-hooks.hooks = {
-    air = {
+    arity = {
       enable = true;
-      entry = "air format --check";
+      entry = "${pkgs.arity}/bin/arity format --check";
       files = "\\.(r|R)$";
       language = "system";
     };
