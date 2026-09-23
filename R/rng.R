@@ -8,8 +8,9 @@
 #' @param rng a random number generator
 #' @param ... additional arguments passed to the random number generator
 #'
-#' @return A function that extracts random numbers from the cache and
-#' fills the cache whenever it runs empty.
+#' @return
+#' A function that extracts random numbers from the cache and fills the cache
+#' whenever it runs empty.
 #' @export
 #'
 #' @examples

@@ -1,13 +1,12 @@
 #' Force evaluation of all arguments to a function
 #'
-#' Forces the evaluation of all arguments in the calling
-#' environment of this function.
+#' Forces the evaluation of all arguments in the calling environment of this
+#' function.
 #'
-#' Use `force_all()` as syntactic sugar to force evaluation of
-#' all arguments to a function and thereby circumvent lazy evaluation.
-#' If called from within a function with `...` as formal argument,
-#' use `force_all(...)` to force evaluation of arguments captured
-#' by `...`.
+#' Use `force_all()` as syntactic sugar to force evaluation of all arguments to
+#' a function and thereby circumvent lazy evaluation. If called from within a
+#' function with `...` as formal argument, use `force_all(...)` to force
+#' evaluation of arguments captured by `...`.
 #'
 #' @param ... arguments captured by ... are also evaluated if passed via ...
 #'
@@ -16,9 +15,7 @@
 #' @export
 #'
 #' @examples
-#' affine <- function(a, b) {
-#'   function(x) a * x + b
-#' }
+#' affine <- function(a, b) function(x) a * x + b
 #'
 #' a <- 1
 #' b <- 1

@@ -18,7 +18,8 @@
 
 #' South west Greenland temperature data
 #'
-#' Monthly average temperatures in degree Celsius in Nuuk and Qaqortoq from 1873 to 2013.
+#' Monthly average temperatures in degree Celsius in Nuuk and Qaqortoq from 1873
+#' to 2013.
 #'
 #' @format
 #' A data frame with 1692 rows and 5 columns:
@@ -35,12 +36,12 @@
 
 #' Social media news sharing
 #'
-#' A dataset containing features about articles published by Mashable in a period
-#' of two years from January 7, 2013, to January 7, 2015. The purpose of collecting
-#' the data was to predict the number of shares of the news articles on social networks.
-#' Compared to the source, seven features are excluded. Two (url and a timestamp)
-#' are not relevant predictors and five are redundant or almost redundant, leading
-#' to collinearity.
+#' A dataset containing features about articles published by Mashable in a
+#' period of two years from January 7, 2013, to January 7, 2015. The purpose of
+#' collecting the data was to predict the number of shares of the news articles
+#' on social networks. Compared to the source, seven features are excluded. Two
+#' (url and a timestamp) are not relevant predictors and five are redundant or
+#' almost redundant, leading to collinearity.
 #'
 #' @format
 #' A data frame with 39,644 rows and 54 columns:
@@ -134,5 +135,6 @@
 #'   \item{\code{psi}}{numeric. The psi angle}
 #' }
 #'
-#' @source <https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/r/ramachandran>
+#' @source
+#' <https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/r/ramachandran>
 "angle"

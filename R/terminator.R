@@ -1,33 +1,33 @@
 #' Constructor of a terminator object
 #'
-#' Terminator objects are used to write termination conditions
-#' that can be tested via a callback function within another function
-#' during its evaluation.
+#' Terminator objects are used to write termination conditions that can be
+#' tested via a callback function within another function during its evaluation.
 #'
 #' Terminator objects are similar to tracer objects but serve a different
-#' purpose. Like tracer objects, they can be used to trace, print and
-#' plot values of a variable within the evaluation environment of another
-#' function during its evaluation. The primary purpose of a terminator
-#' object is, however, to evaluate a termination condition, which can
-#' trigger termination of a loop. Terminator objects do not save trace
-#' information and do not trace runtime.
+#' purpose. Like tracer objects, they can be used to trace, print and plot
+#' values of a variable within the evaluation environment of another function
+#' during its evaluation. The primary purpose of a terminator object is,
+#' however, to evaluate a termination condition, which can trigger termination
+#' of a loop. Terminator objects do not save trace information and do not trace
+#' runtime.
 #'
-#' @param cond  a termination condition. Either an expression or call that
-#'              evaluates to a logical.
-#' @param Delta an integer specifying how often the termination condition
-#'              is evaluated. \code{Delta = 0} means never, and otherwise
-#'              the condition is evaluated every \code{Delta}-th iteration.
-#'              \code{Delta = 1} is the default.
+#' @param cond a termination condition. Either an expression or call that
+#'   evaluates to a logical.
+#' @param Delta an integer specifying how often the termination condition is
+#'   evaluated. \code{Delta = 0} means never, and otherwise the condition is
+#'   evaluated every \code{Delta}-th iteration. \code{Delta = 1} is the default.
 #' @param print a variable name to print or a logical. If FALSE, nothing is
-#'              printed. If a variable name is given, that variable (if it exists)
-#'              will be printed every \code{Delta}-th iteration. If TRUE (the
-#'              default) the last variable in \code{cond} is printed
-#'              every \code{Delta}-th iteration.
-#' @param plotter an expression, possibly created by the \code{plotter} function.
-#' @param ...     other arguments passed to \code{format} for printing and
+#'   printed. If a variable name is given, that variable (if it exists) will be
+#'   printed every \code{Delta}-th iteration. If TRUE (the default) the last
+#'   variable in \code{cond} is printed every \code{Delta}-th iteration.
+#' @param plotter an expression, possibly created by the \code{plotter}
+#'   function.
+#' @param ...
+#'     other arguments passed to \code{format} for printing and
 #'                \code{plot.window}
 #'
-#' @return A terminator object containing the functions \code{terminator} and
+#' @return
+#' A terminator object containing the functions \code{terminator} and
 #' \code{clear}.
 #' @export
 #'
@@ -82,9 +82,10 @@ terminator <- function(
       # as the enclosing environment.
       parent.env(env) <- parent.frame()
       if (cond_expr) {
-        terminate <- tryCatch(eval(cond, envir = env), error = function(e) {
-          warning(e)
-        })
+        terminate <- tryCatch(
+          eval(cond, envir = env),
+          error = function(e) warning(e)
+        )
       }
       terminate <- isTRUE(terminate)
       if (plotter_expr) {
@@ -136,11 +137,12 @@ terminator <- function(
 
 #' Print terminator information
 #'
-#' @param x   a terminator object
+#' @param x a terminator object
 #' @param ... other arguments (currently ignored)
 #'
-#' @return The list of objects from the terminator's evaluation environment,
-#' returned invisibly.
+#' @return
+#' The list of objects from the terminator's evaluation environment, returned
+#' invisibly.
 #'
 #' @export
 #'

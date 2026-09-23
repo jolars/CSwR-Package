@@ -1,7 +1,5 @@
 test_that("force_all forces evaluation", {
-  affine_lazy <- function(a, b) {
-    function(x) a * x + b
-  }
+  affine_lazy <- function(a, b) function(x) a * x + b
 
   affine_forced <- function(a, b) {
     force_all()
